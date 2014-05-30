@@ -1,0 +1,67 @@
+$nav-link-hover-color: white;
+$num-items: 5;
+$intro-font: Intro, Avenir, Century Gothic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$lato-font: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+.nav-container {
+	text-align: center;
+	.nav-justified {
+		width: auto;
+		display: inline-block;
+		font-family: $intro-font;
+		li {
+			@media (min-width: $screen-sm-min) {
+				width: percentage(1/$num-items);
+			}
+			a {
+				font-size: 16px;
+				@media (min-width: $screen-md-min) {
+					font-size: 18px;
+					margin: 10px;
+					padding: 20px;
+				}
+				&:hover {
+					color: $nav-link-hover-color;
+				}
+				&:hover,
+				&:focus,
+				&:active {
+					@include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+				}
+			}
+			.btn {
+				@include box-shadow(inset 0 -3px 5px rgba(0,0,0,.125));
+				margin: 0;
+				&:hover {
+					border: 1px solid $nav-link-hover-color;					
+				}
+
+			}
+		}
+	}
+}
+
+
+.top {
+	margin-top: 50px;
+	@media (min-width: $screen-md-min) {
+		margin-top: 74px;
+	}
+}
+
+footer {
+	@extend .top;
+}
+
+.logo {
+	font-family: $intro-font;
+	letter-spacing: 0.05em;
+}
+
+body {
+	font-family: $lato-font;
+}
+
+.description {
+	line-height: 1.6em;
+}

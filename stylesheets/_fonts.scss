@@ -1,0 +1,13 @@
+$intro-font-path: '../fonts/intro/';
+
+@font-face {
+    font-family: 'Intro';
+    src: url('#{$intro-font-path}intro-webfont.eot');
+    src: url('#{$intro-font-path}intro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$intro-font-path}intro-webfont.woff') format('woff'),
+         url('#{$intro-font-path}intro-webfont.ttf') format('truetype'),
+         url('#{$intro-font-path}intro-webfont.svg#intro_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
