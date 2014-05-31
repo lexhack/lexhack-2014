@@ -894,7 +894,7 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #555555;
+  color: #7594e5;
   text-decoration: none; }
   a:hover, a:focus {
     color: #2a6496;
@@ -916,7 +916,7 @@ img {
   height: auto; }
 
 .img-rounded {
-  border-radius: 6px; }
+  border-radius: none; }
 
 .img-thumbnail {
   padding: 4px;
@@ -2352,7 +2352,7 @@ select[multiple].input-sm {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
-  border-radius: 6px; }
+  border-radius: none; }
 
 select.input-lg {
   height: 46px;
@@ -2679,7 +2679,7 @@ select[multiple].input-lg {
     background-color: white; }
 
 .btn-link {
-  color: #555555;
+  color: #7594e5;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0; }
@@ -2701,7 +2701,7 @@ select[multiple].input-lg {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
-  border-radius: 6px; }
+  border-radius: none; }
 
 .btn-sm {
   padding: 5px 10px;
@@ -3107,7 +3107,7 @@ input[type="button"].btn-block {
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #999999;
-    border-color: #555555; }
+    border-color: #7594e5; }
   .nav .nav-divider {
     height: 1px;
     margin: 9px 0;
@@ -3204,7 +3204,7 @@ input[type="button"].btn-block {
   padding: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eeeeee; }
+  background-color: rgba(255, 255, 255, 0.7); }
   .jumbotron h1,
   .jumbotron .h1 {
     color: inherit; }
@@ -3213,9 +3213,9 @@ input[type="button"].btn-block {
     font-size: 21px;
     font-weight: 200; }
   .jumbotron > hr {
-    border-top-color: #d5d5d5; }
+    border-top-color: rgba(230, 230, 230, 0.7); }
   .container .jumbotron {
-    border-radius: 6px; }
+    border-radius: none; }
   .jumbotron .container {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
@@ -3270,6 +3270,10 @@ input[type="button"].btn-block {
     .top, footer {
       margin-top: 74px; } }
 
+footer {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.65); }
+
 .logo {
   font-family: Intro, Avenir, Century Gothic, "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0.05em; }
@@ -3279,3 +3283,14 @@ body {
 
 .description {
   line-height: 1.6em; }
+
+.social {
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #999999; }
+  @media (min-width: 992px) {
+    .social {
+      text-align: left; } }
+  .social a {
+    color: #999999; }

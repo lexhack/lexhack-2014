@@ -51,6 +51,8 @@ $lato-font: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 footer {
 	@extend .top;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.65);
 }
 
 .logo {
@@ -64,4 +66,19 @@ body {
 
 .description {
 	line-height: 1.6em;
+}
+
+.social {
+	margin-top: 25px;
+	// padding: 5px;
+	margin-bottom: 0;
+	font-size: 18px;
+	@media (min-width: $screen-md-min) {
+		text-align: left;
+	}
+	// text-align: left;
+	color: $gray-light;
+	a {
+		color: $gray-light;
+	}
 }
