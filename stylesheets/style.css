@@ -893,7 +893,7 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #7594e5;
+  color: #2e64fe;
   text-decoration: none; }
   a:hover, a:focus {
     color: #2a6496;
@@ -2611,19 +2611,19 @@ select[multiple].input-lg {
 
 .btn-success {
   color: white;
-  background-color: #0101df;
-  border-color: #0101df; }
+  background-color: #f2b500;
+  border-color: #f2b500; }
   .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     color: white;
-    background-color: #0101ac;
-    border-color: #0101a2; }
+    background-color: #bf8f00;
+    border-color: #b58700; }
   .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     background-image: none; }
   .btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
-    background-color: #0101df;
-    border-color: #0101df; }
+    background-color: #f2b500;
+    border-color: #f2b500; }
   .btn-success .badge {
-    color: #0101df;
+    color: #f2b500;
     background-color: white; }
 
 .btn-info {
@@ -2678,7 +2678,7 @@ select[multiple].input-lg {
     background-color: white; }
 
 .btn-link {
-  color: #7594e5;
+  color: #2e64fe;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0; }
@@ -3106,7 +3106,7 @@ input[type="button"].btn-block {
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #999999;
-    border-color: #7594e5; }
+    border-color: #2e64fe; }
   .nav .nav-divider {
     height: 1px;
     margin: 9px 0;
@@ -3267,6 +3267,9 @@ input[type="button"].btn-block {
   @media (min-width: 992px) {
     .top, footer {
       margin-top: 74px; } }
+
+.copy {
+  color: #000000; }
 
 footer {
   font-size: 16px;

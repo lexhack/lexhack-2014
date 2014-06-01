@@ -49,6 +49,10 @@ $lato-font: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 }
 
+.copy {
+	color: #000000;
+}
+
 footer {
 	@extend .top;
 	font-size: 16px;
