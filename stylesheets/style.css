@@ -3273,7 +3273,8 @@ input[type="button"].btn-block {
     .jumbotron {
       margin: 0 auto;
       position: relative;
-      top: 20vh; } }
+      top: 50vh;
+      -webkit-transform: translateY(-50%); } }
 
 #copy-bg {
   background: #FFFFFF;
@@ -3295,11 +3296,8 @@ footer {
   z-index: -1; }
   @media (min-width: 768px) {
     .bg {
-      left: -25%; } }
-  @media (min-width: 992px) {
-    .bg {
       left: -10%; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 992px) {
     .bg {
       left: 0; } }
 
@@ -3321,3 +3319,15 @@ body {
       text-align: left; } }
   .social a {
     color: #999999; }
+
+section header {
+  text-align: center;
+  padding: 35px;
+  background-color: #F2B500; }
+  section header h1 {
+    font-size: 5em;
+    font-family: Intro, Avenir, Century Gothic, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0; }
+
+body {
+  font-size: 14px; }

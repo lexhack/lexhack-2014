@@ -52,8 +52,9 @@ $lato-font: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	@media (min-width: $screen-sm-min) {
 		margin: 0 auto;
 		position: relative;
-		top: 20vh;
-		// -webkit-transform: translateY(-50%);
+		// top: 20vh;
+		top: 50vh;
+		-webkit-transform: translateY(-50%);
 	}
 }
 
@@ -103,12 +104,9 @@ footer {
 	position: absolute;
 	z-index: -1;
 	@media (min-width: $screen-sm-min) {
-		left: -25%;
-	}
-	@media (min-width: $screen-md-min) {
 		left: -10%;
 	}
-	@media (min-width: $screen-lg-min) {
+	@media (min-width: $screen-md-min) {
 		left: 0;
 	}
 }
@@ -136,4 +134,23 @@ body {
 	a {
 		color: $gray-light;
 	}
+}
+
+
+section {
+
+	header {
+		text-align: center;
+		padding: 35px;
+		h1 {
+			font-size: 5em;
+			font-family: $intro-font;
+			margin: 0;
+		}
+		background-color: #F2B500;
+	}
+}
+
+body {
+	font-size: 14px;
 }
