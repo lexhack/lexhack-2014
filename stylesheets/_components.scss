@@ -52,13 +52,9 @@ $lato-font: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	@media (min-width: $screen-sm-min) {
 		margin: 0 auto;
 		position: relative;
-		top: 42vh;
-		-webkit-transform: translateY(-50%);
+		top: 20vh;
+		// -webkit-transform: translateY(-50%);
 	}
-}
-
-.copy {
-	color: #000000;
 }
 
 #copy-bg {
@@ -67,7 +63,6 @@ $lato-font: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 footer {
-	@extend .top;
 	font-size: 16px;
 	color: rgba(255, 255, 255, 0.65);
 }
@@ -77,27 +72,44 @@ footer {
 	letter-spacing: 0.05em;
 }
 
-img.bg {
-	/* Set rules to fill background */
+// .bg {
+// 	/* Set rules to fill background */
+// 	min-height: 100%;
+// 	min-width: 1099px;
+
+// 	/* Set up proportionate scaling */
+// 	width: 100%;
+// 	height: auto;
+
+// 	/* Set up positioning */
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+
+// 	z-index: -1;
+// }
+
+// @media screen and (max-width: 1099px) { /* Specific to this particular image */
+// 	.bg {
+// 		left: 50%;
+// 		margin-left: -550px;   /* 50% */
+// 	}
+// }
+
+.bg {
+	min-width: 100%;
 	min-height: 100%;
-	min-width: 1099px;
-	
-	/* Set up proportionate scaling */
-	width: 100%;
-	height: auto;
-	
-	/* Set up positioning */
+	left: -30%;
 	position: absolute;
-	top: 0;
-	left: 0;
-
 	z-index: -1;
-}
-
-@media screen and (max-width: 1099px) { /* Specific to this particular image */
-	img.bg {
-		left: 50%;
-		margin-left: -550px;   /* 50% */
+	@media (min-width: $screen-sm-min) {
+		left: -25%;
+	}
+	@media (min-width: $screen-md-min) {
+		left: -10%;
+	}
+	@media (min-width: $screen-lg-min) {
+		left: 0;
 	}
 }
 

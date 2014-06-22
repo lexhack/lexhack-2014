@@ -3264,7 +3264,7 @@ input[type="button"].btn-block {
       .nav-container .nav-justified li .btn:hover {
         border: 1px solid white; }
 
-.top, footer {
+.top {
   min-height: 100vh; }
 
 .jumbotron {
@@ -3273,11 +3273,7 @@ input[type="button"].btn-block {
     .jumbotron {
       margin: 0 auto;
       position: relative;
-      top: 42vh;
-      -webkit-transform: translateY(-50%); } }
-
-.copy {
-  color: #000000; }
+      top: 20vh; } }
 
 #copy-bg {
   background: #FFFFFF;
@@ -3291,25 +3287,22 @@ footer {
   font-family: Intro, Avenir, Century Gothic, "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0.05em; }
 
-img.bg {
-  /* Set rules to fill background */
+.bg {
+  min-width: 100%;
   min-height: 100%;
-  min-width: 1099px;
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-  /* Set up positioning */
+  left: -30%;
   position: absolute;
-  top: 0;
-  left: 0;
   z-index: -1; }
+  @media (min-width: 768px) {
+    .bg {
+      left: -25%; } }
+  @media (min-width: 992px) {
+    .bg {
+      left: -10%; } }
+  @media (min-width: 1200px) {
+    .bg {
+      left: 0; } }
 
-@media screen and (max-width: 1099px) {
-  /* Specific to this particular image */
-  img.bg {
-    left: 50%;
-    margin-left: -550px;
-    /* 50% */ } }
 body {
   overflow: hidden;
   background: rgba(0, 0, 0, 0);
