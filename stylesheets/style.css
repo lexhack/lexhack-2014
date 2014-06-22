@@ -3263,13 +3263,19 @@ input[type="button"].btn-block {
         border: 1px solid white; }
 
 .top, footer {
-  margin-top: 50px; }
+  margin-top: 50px;
+  height: calc(100vh - 50px); }
   @media (min-width: 992px) {
     .top, footer {
-      margin-top: 74px; } }
+      margin-top: 74px;
+      height: calc(100vh - 74px); } }
 
 .copy {
   color: #000000; }
+
+#copy-bg {
+  background: #FFFFFF;
+  width: 100%; }
 
 footer {
   font-size: 16px;
@@ -3279,7 +3285,27 @@ footer {
   font-family: Intro, Avenir, Century Gothic, "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0.05em; }
 
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1099px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  /* Set up positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+@media screen and (max-width: 1099px) {
+  /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -550px;
+    /* 50% */ } }
 body {
+  background: transparent;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .description {
