@@ -3273,7 +3273,7 @@ input[type="button"].btn-block {
     .jumbotron {
       margin: 0 auto;
       position: relative;
-      top: 50vh;
+      top: 42vh;
       -webkit-transform: translateY(-50%); } }
 
 .copy {
