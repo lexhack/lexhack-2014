@@ -3289,23 +3289,29 @@ footer {
   font-family: Intro, Avenir, Century Gothic, "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0.05em; }
 
-@media (min-width: 992px) {
-  .bg {
-    min-width: 100%;
-    min-height: 100%;
-    top: 0;
-    left: 0; } }
-
 body {
   background: rgba(0, 0, 0, 0);
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.bg {
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  left: -40%; }
+  @media (min-width: 768px) {
+    .bg {
+      left: -20%; } }
+  @media (min-width: 992px) {
+    .bg {
+      left: 0%;
+      min-width: 100vw; } }
 
 .img-container {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
-  overflow-x: hidden;
+  overflow: hidden;
   width: 100%; }
 
 .description {
