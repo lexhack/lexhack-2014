@@ -41,19 +41,18 @@ $lato-font: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 }
 
-
-
 .top {
-	min-height: 100vh;
+	@media (min-width: $screen-sm-min) {
+		height: 100vh;
+	}
 }
 
-.jumbotron {
-	margin-top: 30px;
+.jumbotron {	
+	margin-top: 10px;
 	@media (min-width: $screen-sm-min) {
-		margin: 0 auto;
+		margin: 0;
 		position: relative;
-		// top: 20vh;
-		top: 50vh;
+		top: 50%;
 		-webkit-transform: translateY(-50%);
 	}
 }
@@ -73,48 +72,37 @@ footer {
 	letter-spacing: 0.05em;
 }
 
-// .bg {
-// 	/* Set rules to fill background */
-// 	min-height: 100%;
-// 	min-width: 1099px;
-
-// 	/* Set up proportionate scaling */
-// 	width: 100%;
-// 	height: auto;
-
-// 	/* Set up positioning */
-// 	position: absolute;
-// 	top: 0;
-// 	left: 0;
-
-// 	z-index: -1;
-// }
-
-// @media screen and (max-width: 1099px) { /* Specific to this particular image */
-// 	.bg {
-// 		left: 50%;
-// 		margin-left: -550px;   /* 50% */
-// 	}
-// }
-
 .bg {
-	min-width: 100%;
-	min-height: 100%;
-	left: -30%;
-	position: absolute;
-	z-index: -1;
-	@media (min-width: $screen-sm-min) {
-		left: -10%;
-	}
+	// 	min-width: 100%;
+	// 	min-height: 100%;
+	// 	position: absolute;
+	// 	left: -40%;
+	// 	z-index: -1;
+	// 	@media (min-width: $screen-sm-min) {
+	// 		left: -10%;
+	// 	}
 	@media (min-width: $screen-md-min) {
+		min-width: 100%;
+		min-height: 100%;
+		top: 0;
 		left: 0;
 	}
 }
 
 body {
-	overflow: hidden;
 	background: rgba(0, 0, 0, 0);
 	font-family: $lato-font;
+}
+
+.img-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	overflow-x: hidden;
+	width: 100%;
+	@media (min-width: $screen-md-min) {
+	}
 }
 
 .description {
@@ -138,19 +126,17 @@ body {
 
 
 section {
-
 	header {
 		text-align: center;
 		padding: 35px;
 		h1 {
-			font-size: 5em;
+			font-size: 3em;
 			font-family: $intro-font;
 			margin: 0;
+			@media (min-width: $screen-md-min) {
+				font-size: 5em;
+			}
 		}
 		background-color: #F2B500;
 	}
-}
-
-body {
-	font-size: 14px;
 }

@@ -3264,16 +3264,17 @@ input[type="button"].btn-block {
       .nav-container .nav-justified li .btn:hover {
         border: 1px solid white; }
 
-.top {
-  min-height: 100vh; }
+@media (min-width: 768px) {
+  .top {
+    height: 100vh; } }
 
 .jumbotron {
-  margin-top: 30px; }
+  margin-top: 10px; }
   @media (min-width: 768px) {
     .jumbotron {
-      margin: 0 auto;
+      margin: 0;
       position: relative;
-      top: 50vh;
+      top: 50%;
       -webkit-transform: translateY(-50%); } }
 
 #copy-bg {
@@ -3288,23 +3289,24 @@ footer {
   font-family: Intro, Avenir, Century Gothic, "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0.05em; }
 
-.bg {
-  min-width: 100%;
-  min-height: 100%;
-  left: -30%;
-  position: absolute;
-  z-index: -1; }
-  @media (min-width: 768px) {
-    .bg {
-      left: -10%; } }
-  @media (min-width: 992px) {
-    .bg {
-      left: 0; } }
+@media (min-width: 992px) {
+  .bg {
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0; } }
 
 body {
-  overflow: hidden;
   background: rgba(0, 0, 0, 0);
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow-x: hidden;
+  width: 100%; }
 
 .description {
   line-height: 1.6em; }
@@ -3325,9 +3327,9 @@ section header {
   padding: 35px;
   background-color: #F2B500; }
   section header h1 {
-    font-size: 5em;
+    font-size: 3em;
     font-family: Intro, Avenir, Century Gothic, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0; }
-
-body {
-  font-size: 14px; }
+    @media (min-width: 992px) {
+      section header h1 {
+        font-size: 5em; } }
