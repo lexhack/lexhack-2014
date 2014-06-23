@@ -3273,7 +3273,9 @@ input[type="button"].btn-block {
       margin: 0;
       position: relative;
       top: 50%;
-      -webkit-transform: translateY(-50%); } }
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%); } }
 
 #copy-bg {
   background: #FFFFFF;
