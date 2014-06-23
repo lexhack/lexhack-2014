@@ -105,6 +105,18 @@ body {
 	}
 }
 
+td {
+	padding: 5px;
+}
+
+td.time {
+	text-align: center;
+}
+
+td.event{
+	text-align: left;
+}
+
 .description {
 	line-height: 1.6em;
 }
@@ -130,13 +142,17 @@ section {
 		text-align: center;
 		padding: 35px;
 		h1 {
-			font-size: 3em;
+			font-size: 2em;
 			font-family: $intro-font;
 			margin: 0;
 			@media (min-width: $screen-md-min) {
-				font-size: 5em;
+				font-size: 3em;
 			}
 		}
 		background-color: #F2B500;
+	}
+	.container {
+		padding: 35px;
+		font-size: 1.2em;
 	}
 }

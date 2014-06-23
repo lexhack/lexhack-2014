@@ -251,7 +251,6 @@ th {
   font-family: 'Glyphicons Halflings';
   src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
   src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
-
 .glyphicon {
   position: relative;
   top: 1px;
@@ -876,7 +875,7 @@ th {
 
 html {
   font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -3235,7 +3234,6 @@ input[type="button"].btn-block {
   src: url("../fonts/intro/intro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/intro/intro-webfont.woff") format("woff"), url("../fonts/intro/intro-webfont.ttf") format("truetype"), url("../fonts/intro/intro-webfont.svg#intro_regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .nav-container {
   text-align: center; }
   .nav-container .nav-justified {
@@ -3297,7 +3295,7 @@ footer {
     left: 0; } }
 
 body {
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .img-container {
@@ -3307,6 +3305,15 @@ body {
   z-index: -1;
   overflow-x: hidden;
   width: 100%; }
+
+td {
+  padding: 5px; }
+
+td.time {
+  text-align: center; }
+
+td.event {
+  text-align: left; }
 
 .description {
   line-height: 1.6em; }
@@ -3327,9 +3334,12 @@ section header {
   padding: 35px;
   background-color: #F2B500; }
   section header h1 {
-    font-size: 3em;
+    font-size: 2em;
     font-family: Intro, Avenir, Century Gothic, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0; }
     @media (min-width: 992px) {
       section header h1 {
-        font-size: 5em; } }
+        font-size: 3em; } }
+section .container {
+  padding: 35px;
+  font-size: 1.2em; }
