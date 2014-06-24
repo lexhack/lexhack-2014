@@ -251,7 +251,6 @@ th {
   font-family: 'Glyphicons Halflings';
   src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
   src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
-
 .glyphicon {
   position: relative;
   top: 1px;
@@ -876,7 +875,7 @@ th {
 
 html {
   font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -894,7 +893,7 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #555555;
+  color: #2e64fe;
   text-decoration: none; }
   a:hover, a:focus {
     color: #2a6496;
@@ -916,7 +915,7 @@ img {
   height: auto; }
 
 .img-rounded {
-  border-radius: 6px; }
+  border-radius: none; }
 
 .img-thumbnail {
   padding: 4px;
@@ -2352,7 +2351,7 @@ select[multiple].input-sm {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
-  border-radius: 6px; }
+  border-radius: none; }
 
 select.input-lg {
   height: 46px;
@@ -2612,19 +2611,19 @@ select[multiple].input-lg {
 
 .btn-success {
   color: white;
-  background-color: #5cb85c;
-  border-color: #4cae4c; }
+  background-color: #f2b500;
+  border-color: #f2b500; }
   .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     color: white;
-    background-color: #449d44;
-    border-color: #398439; }
+    background-color: #bf8f00;
+    border-color: #b58700; }
   .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     background-image: none; }
   .btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
-    background-color: #5cb85c;
-    border-color: #4cae4c; }
+    background-color: #f2b500;
+    border-color: #f2b500; }
   .btn-success .badge {
-    color: #5cb85c;
+    color: #f2b500;
     background-color: white; }
 
 .btn-info {
@@ -2679,7 +2678,7 @@ select[multiple].input-lg {
     background-color: white; }
 
 .btn-link {
-  color: #555555;
+  color: #2e64fe;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0; }
@@ -2701,7 +2700,7 @@ select[multiple].input-lg {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
-  border-radius: 6px; }
+  border-radius: none; }
 
 .btn-sm {
   padding: 5px 10px;
@@ -3107,7 +3106,7 @@ input[type="button"].btn-block {
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #999999;
-    border-color: #555555; }
+    border-color: #2e64fe; }
   .nav .nav-divider {
     height: 1px;
     margin: 9px 0;
@@ -3204,7 +3203,7 @@ input[type="button"].btn-block {
   padding: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eeeeee; }
+  background-color: rgba(255, 255, 255, 0.7); }
   .jumbotron h1,
   .jumbotron .h1 {
     color: inherit; }
@@ -3213,9 +3212,9 @@ input[type="button"].btn-block {
     font-size: 21px;
     font-weight: 200; }
   .jumbotron > hr {
-    border-top-color: #d5d5d5; }
+    border-top-color: rgba(230, 230, 230, 0.7); }
   .container .jumbotron {
-    border-radius: 6px; }
+    border-radius: none; }
   .jumbotron .container {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
@@ -3235,7 +3234,6 @@ input[type="button"].btn-block {
   src: url("../fonts/intro/intro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/intro/intro-webfont.woff") format("woff"), url("../fonts/intro/intro-webfont.ttf") format("truetype"), url("../fonts/intro/intro-webfont.svg#intro_regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .nav-container {
   text-align: center; }
   .nav-container .nav-justified {
@@ -3264,18 +3262,92 @@ input[type="button"].btn-block {
       .nav-container .nav-justified li .btn:hover {
         border: 1px solid white; }
 
-.top, footer {
-  margin-top: 50px; }
-  @media (min-width: 992px) {
-    .top, footer {
-      margin-top: 74px; } }
+@media (min-width: 768px) {
+  .top {
+    height: 100vh; } }
+
+.jumbotron {
+  margin-top: 10px; }
+  @media (min-width: 768px) {
+    .jumbotron {
+      margin: 0;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%); } }
+
+#copy-bg {
+  background: #FFFFFF;
+  width: 100%; }
+
+footer {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.65); }
 
 .logo {
   font-family: Intro, Avenir, Century Gothic, "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0.05em; }
 
 body {
+  background: transparent;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.bg {
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  left: -40%; }
+  @media (min-width: 768px) {
+    .bg {
+      left: -20%; } }
+  @media (min-width: 992px) {
+    .bg {
+      left: 0%;
+      min-width: 100vw; } }
+
+.img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%; }
+
+td {
+  padding: 5px; }
+
+td.time {
+  text-align: center; }
+
+td.event {
+  text-align: left; }
 
 .description {
   line-height: 1.6em; }
+
+.social {
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #999999; }
+  @media (min-width: 992px) {
+    .social {
+      text-align: left; } }
+  .social a {
+    color: #999999; }
+
+section header {
+  text-align: center;
+  padding: 35px;
+  background-color: #F2B500; }
+  section header h1 {
+    font-size: 2em;
+    font-family: Intro, Avenir, Century Gothic, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0; }
+    @media (min-width: 992px) {
+      section header h1 {
+        font-size: 3em; } }
+section .container {
+  padding: 35px;
+  font-size: 1.2em; }

@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="shortcut icon" href="">
@@ -16,34 +15,98 @@
 </head>
 
 <body>
-  <!-- <img src='images/minuteman.jpg' class='img-responsive' style='-webkit-filter: blur(30px);position: fixed; z-index: -1;width:100%; top: 0;'>
--->   
-
-<!-- <header class="jumbotron text-center nav-container"> -->
-    <!-- <h1 class='logo'><i class='fa fa-thumbs-o-up' style='padding-right:0.2em'></i><div style='display: inline-block; -webkit-transform: scale(1.1,1.3);'>L</div>EX<span style=''><div style='display: inline-block; -webkit-transform: scale(1.1,1.3);'>H</div>ACK</span></h1> -->
-<div class="container top">
+  <div class='img-container'>
+   <img src='images/minuteman.jpg' class='bg'>
+ </div>
+ <div class="container top">
   <header class="jumbotron text-center nav-container">
-    <h1 class='logo'><i class='fa fa-thumbs-o-up' style='padding-right:0.2em'></i><span style='font-size:78px;'>L</span>EX<span style=''><span style='font-size: 78px;'>H</span>ACK</span></h1>
+    <h1 class='logo'><i class='fa fa-compass' style='padding-right:0.2em;'></i><span style='font-size:1.15em'>L</span>EX<span style='color:#F2B500;'><span style='font-size:1.15em'>H</span>ACK</span></h1>
     <div class='description'>
-      <p><em>a hackathon for high schoolers</em></p>
-      <p>Feb 29th @ LHS Field House</p>
+      <p><em>a 100% free, 12-hour hackathon for high schoolers</em></p>
+      <p>September 27th @ <a href="https://www.google.com/maps/place/Lexington+High+School/">LHS Field House</a></p>
+      <p>8:00 am • 10:45 pm</p>
     </div>
     <br>
     <ul class="nav nav-pills nav-justified">
-      <li><a href="#">Details</a></li>
-      <li><a href="#">About</a></li>
-      <li><a class="btn btn-lg btn-success" href="#">Register</a></li>
-      <li><a href="#">Sponsors</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a class="btn btn-lg btn-success" href="http://eepurl.com/Xs_4z">Register</a></li>
+      <li><a href="#sponsors">Sponsors</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="social">
+<!--      <a href="http://google.com"><i class="fa fa-google-plus-square"></i></a> --> &nbsp <a href="https://twitter.com/lexhacks"><i class="fa fa-twitter"></i></a> <!-- &nbsp <a href="http://facebook.com"><i class="fa fa-facebook-square"></i></a> --> &nbsp &nbsp <a href="https://twitter.com/search?q=%23lexhack">#lexhack</a> &nbsp <a href="https://twitter.com/search?q=%23lexgo">#lexgo</a>
+   </div>
+ </header>
+</div>
+<div id="copy-bg">
+ <section id="about">
+   <header>
+    <h1>About</h1>
   </header>
+  <div class='container'>
+    <p><strong>LexHack</strong> is a hackathon targetting high school students of all programming abilities. A hackathon is an event where teams of 4-5 individuals work together towards development of a software application (or a hardware project if you're so inclined). At LexHack, you will have 12 hours to complete your project, after which your project will be judged by a panel of judges. These judges will then determine a winner based on the reward criteria for the event. </p>
+    <p> This event is totally free, all you need to do to attend is <a href="http://eepurl.com/Xs_4z">register here</a> and then show up on September 27th at the <a href="https://www.google.com/maps/place/Lexington+High+School/">Lexington High School Field House</a> (251 Waltham St, Lexington MA) by 8:30 am on September 27th. If you don't have a team, don't worry, you can find one when you arrive at the event! In that case, please try to arrive a little earlier so we can match you up with others who need a team. All we ask is that you bring a laptop and any other hardware you wish to use, as well as an open mind.</p>
+    <h2>Schedule</h2>
+    <table>
+    <tr>
+    <td class="time">8:00 am • 9:00 am</td><td class="event">Registration / mingle time</td>
+    </tr>
+    <tr>
+    <td class="time">9:00 am • 9:15 am </td><td class="event"> Opening ceremonies </td>
+    </tr>
+    <tr>
+    <td class="time">9:15 am • 9:15 pm </td><td class="event"> Hacking (w/ breaks for food) </td>
+    </tr>
+    <tr>
+    <td class="time">&nbsp&nbsp9:15 pm • 10:00 pm </td><td class="event"> 1st round judging + delibration </td>
+    </tr>
+    <tr>
+    <td class="time">10:00 pm • 10:45 pm </td><td class="event"> Demos/2nd round judging + closing ceremonies </td>
+    </tr>
+    </table>
+  </div>
+ </section>
 
-  <section>
-  </section>
+ <section id="faq">
+  <header>
+    <h1>FAQ</h1>
+  </header>
+  <div class='container'>
+    <h3>Who can attend?</h3>
+    <p>Anyone currently enrolled in high school may attend. If you're unsure about your eligibility, please <a href="mailto:info@lexhack.org">email</a> us.</p>
+    <h3>Do I need to know anything about programming to attend?</h3>
+    <p>Nope! Part of the goal of LexHack is to help people learn how to quickly develop a prototype of a full application from a single idea. We'll have plenty of mentors at the event to help you learn, and we guarantee you'll have built something awesome by the end of the day! We'll also have a special award category for the best beginner project.</p>
+    <h3>How much does LexHack cost?</h3>
+    <p>Absolutely nothing! This is thanks to the gracious donations of our <a href="#sponsors">sponsors</a>.</p>
+    <h3>Do I need to make a team for LexHack?</h3>
+    <p>Nope. We recommend competing with a team of 4-5 other students, and if already have a team in mind, that's great! However, we've set aside time in the morning for you to meet others and form a team if you don't have one when you sign up. Just be prepared to come a little earlier (doors open at 8 am).</p>
+    <h3>What do I need to bring?</h3>
+    <p>Bring yourself and any tools you need. For most, this will just be a laptop and charger. If you're more advanced and want to do a hardware project or a mobile application, bring the required equipment for these as we won't have any additional equipment available. </p>
+  </div>
+</section>
+<section id="sponsors">
+  <header>
+    <h1>Sponsors</h1>
+  </header>
+  <div class='container'>
+   <img src="http://www.lexrobotics.com/wordpress/wp-content/uploads/2014/05/cropped-Lexrobotics_Logo.png">
+   <div class='container'>
+   </section>
 
-  <footer class='text-center'>
-    <p>&copy; LexHack 2014</p>
-  </footer>
+   <section id="contact">
+   <header>
+    <h1>Contact</h1>
+   </header>
+   <div class='container'>
+   Need to get in touch? Shoot us an email at <a href="mailto:info@lexhack.org">info@lexhack.org</a>! <br>
+   You can also find us on Twitter <a href="https://twitter.com/lexhacks">@lexhacks</a>. 
+   </div>
+   </section>
+ </div>
+ <footer class='text-center'>
+  <p>&copy; LexHack 2014</p>
+</footer>
 
 </div>
 

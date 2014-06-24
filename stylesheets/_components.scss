@@ -41,27 +41,114 @@ $lato-font: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 }
 
-
 .top {
-	margin-top: 50px;
-	@media (min-width: $screen-md-min) {
-		margin-top: 74px;
+	@media (min-width: $screen-sm-min) {
+		height: 100vh;
 	}
 }
 
+.jumbotron {	
+	margin-top: 10px;
+	@media (min-width: $screen-sm-min) {
+		margin: 0;
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+	}
+}
+
+#copy-bg {
+	background: #FFFFFF;
+	width: 100%;
+}
+
 footer {
-	@extend .top;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.65);
 }
 
 .logo {
 	font-family: $intro-font;
 	letter-spacing: 0.05em;
 }
-
 body {
+	background: rgba(0, 0, 0, 0);
 	font-family: $lato-font;
+}
+
+.bg {
+	min-width: 100%;
+	min-height: 100%;
+	position: relative;
+	left: -40%;
+	@media (min-width: $screen-sm-min) {
+		left: -20%;
+	}
+	@media (min-width: $screen-md-min) {
+		left: 0%;
+		min-width: 100vw;
+	}
+}
+
+.img-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	overflow: hidden;
+	width: 100%;
+}
+
+td {
+	padding: 5px;
+}
+
+td.time {
+	text-align: center;
+}
+
+td.event{
+	text-align: left;
 }
 
 .description {
 	line-height: 1.6em;
+}
+
+.social {
+	margin-top: 25px;
+	// padding: 5px;
+	margin-bottom: 0;
+	font-size: 18px;
+	@media (min-width: $screen-md-min) {
+		text-align: left;
+	}
+	// text-align: left;
+	color: $gray-light;
+	a {
+		color: $gray-light;
+	}
+}
+
+
+section {
+	header {
+		text-align: center;
+		padding: 35px;
+		h1 {
+			font-size: 2em;
+			font-family: $intro-font;
+			margin: 0;
+			@media (min-width: $screen-md-min) {
+				font-size: 3em;
+			}
+		}
+		background-color: #F2B500;
+	}
+	.container {
+		padding: 35px;
+		font-size: 1.2em;
+	}
 }
