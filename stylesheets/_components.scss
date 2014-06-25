@@ -5,19 +5,29 @@ $lato-font: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 .nav-container {
 	text-align: center;
-	.nav-justified {
-		width: auto;
-		display: inline-block;
+	.nav-pills {
 		font-family: $intro-font;
+		width: 100%;
 		li {
+			float: left;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			text-align: center;
 			@media (min-width: $screen-sm-min) {
 				width: percentage(1/$num-items);
+
 			}
 			a {
+				box-sizing: border-box;
+				display: inline-block;
+				width: 75%;
 				font-size: 16px;
+				@media (min-width:  $screen-sm-min) {
+					width: 98%;
+				}
 				@media (min-width: $screen-md-min) {
 					font-size: 18px;
-					margin: 10px;
 					padding: 20px;
 				}
 				&:hover {
@@ -42,14 +52,18 @@ $lato-font: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .top {
-	@media (min-width: $screen-sm-min) {
-		height: 100vh;
+	@media (min-width: $screen-lg-min) {
+		height: 100vh; // vh bug in mobile safari
 	}
 }
 
 .jumbotron {	
 	margin-top: 10px;
-	@media (min-width: $screen-sm-min) {
+	@media (min-width:  $screen-sm-min) {
+		margin-top: 0;
+		margin: 80px 0;
+	}
+	@media (min-width: $screen-lg-min) {
 		margin: 0;
 		position: relative;
 		top: 50%;
@@ -79,12 +93,11 @@ body {
 	left: -40%;
 	@media (min-width: $screen-sm-min) {
 		min-height: 100%;
-		
-		left: -20%;
+		left: -10%;
 	}
 	@media (min-width: $screen-md-min) {
-		left: 0%;
-		min-width: 100vw;
+		left: 0;
+		// min-width: 100vw;
 	}
 }
 
