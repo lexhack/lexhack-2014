@@ -3278,14 +3278,14 @@ input[type="button"].btn-block {
   .top {
     height: 100vh; } }
 
-.jumbotron {
+#main-jumbo {
   margin-top: 10px; }
   @media (min-width: 768px) {
-    .jumbotron {
+    #main-jumbo {
       margin-top: 0;
       margin: 80px 0; } }
   @media (min-width: 1200px) {
-    .jumbotron {
+    #main-jumbo {
       margin: 0;
       position: relative;
       top: 50%;
