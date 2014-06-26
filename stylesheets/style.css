@@ -3311,11 +3311,13 @@ body {
   left: -40%; }
   @media (min-width: 768px) {
     .bg {
-      min-height: 100%;
       left: -10%; } }
   @media (min-width: 992px) {
     .bg {
       left: 0; } }
+  @media (min-width: 1200px) {
+    .bg {
+      height: 100vh; } }
 
 .img-container {
   position: absolute;
@@ -3323,7 +3325,8 @@ body {
   left: 0;
   z-index: -1;
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+  min-height: 100%; }
 
 td {
   padding: 5px; }

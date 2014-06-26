@@ -92,13 +92,15 @@ body {
 	position: relative;
 	left: -40%;
 	@media (min-width: $screen-sm-min) {
-		min-height: 100%;
 		left: -10%;
 	}
 	@media (min-width: $screen-md-min) {
 		left: 0;
-		// min-width: 100vw;
 	}
+	@media (min-width: $screen-lg-min) {
+		height: 100vh;
+	}
+
 }
 
 .img-container {
@@ -108,6 +110,7 @@ body {
 	z-index: -1;
 	overflow: hidden;
 	width: 100%;
+	min-height: 100%;
 }
 
 td {
