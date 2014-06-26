@@ -3317,7 +3317,7 @@ body {
       left: 0; } }
   @media (min-width: 1200px) {
     .bg {
-      height: 100vh; } }
+      min-height: 100vh; } }
 
 .img-container {
   position: absolute;
