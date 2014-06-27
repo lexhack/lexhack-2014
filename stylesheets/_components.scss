@@ -51,6 +51,46 @@ $lato-font: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 }
 
+#registration {
+	margin-left: 75px;
+	text-align: left;
+	font-size: 1.1em;
+
+	.btn {
+		font-family: Intro;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+	textarea {
+		resize: none;
+	}
+
+	.ss-required-asterisk {
+		color: #F66E6E;
+	}
+
+	.ss-secondary-text {
+		font-style: italic;
+		font-size: 0.9em;
+	}
+
+	.required-message {
+		display: none;
+	}
+}
+
+.unstyled{ 
+	color: black;
+}
+
+.unstyled:hover {
+	color: black;
+	text-decoration: none;
+}
+
 .top {
 	@media (min-width: $screen-lg-min) {
 		height: 100vh; // vh bug in mobile safari
