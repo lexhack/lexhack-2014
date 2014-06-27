@@ -3273,7 +3273,7 @@ input[type="button"].btn-block {
           border: 1px solid white; }
 
 #registration {
-  margin-left: 75px;
+  margin-left: 10%;
   text-align: left;
   font-size: 1.1em; }
   #registration .btn {
