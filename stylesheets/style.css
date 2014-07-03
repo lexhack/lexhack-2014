@@ -3377,4 +3377,9 @@ section {
       margin: 0; }
 
 .sponsor-logo {
+  padding: 10px;
   max-width: 100%; }
+  @media (min-width: 1200px) {
+    .sponsor-logo {
+      margin: 30px;
+      width: 33%; } }
