@@ -127,5 +127,22 @@
 	<p>&copy; LexHack 2014. Made with &lt;3 in Lexington.</p>
 </footer>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="javascripts/jquery.min.js"><\/script>')</script>
+<script>$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('#wrapper').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});</script>
+
 </body>
 </html>
