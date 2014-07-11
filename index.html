@@ -8,7 +8,6 @@
 	<meta name="author" content="">
 	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="">
 	<title>LexHack!</title>
 	<link href="stylesheets/style.css" rel="stylesheet">
 	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -28,7 +27,7 @@
 
 <body>
 	<div class='img-container'>
-		<img src='images/minuteman.jpg' class='bg'>
+		<img src='images/minuteman.jpg' class='bg' alt="Minuteman background">
 	</div>
 	<div class="container top">
 		<header class="jumbotron text-center nav-container" id='main-jumbo'>
@@ -47,7 +46,7 @@
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 			<div class="social">
-				<a href="https://github.com/lexhack"><i class="fa fa-github"></i></a> &nbsp <a href="https://twitter.com/lexhacks"><i class="fa fa-twitter"></i></a> <!-- &nbsp <a href="http://facebook.com"><i class="fa fa-facebook-square"></i></a> --> &nbsp &nbsp <a href="https://twitter.com/search?q=%23lexhack">#lexhack</a> &nbsp <a href="https://twitter.com/search?q=%23lexgo">#lexgo</a>
+				<a href="https://github.com/lexhack"><i class="fa fa-github"></i></a> &nbsp; <a href="https://twitter.com/lexhacks"><i class="fa fa-twitter"></i></a> <!-- &nbsp; <a href="http://facebook.com"><i class="fa fa-facebook-square"></i></a> --> &nbsp; &nbsp; <a href="https://twitter.com/search?q=%23lexhack">#lexhack</a> &nbsp; <a href="https://twitter.com/search?q=%23lexgo">#lexgo</a>
 			</div>
 		</header>
 	</div>
@@ -70,7 +69,7 @@
 					<td class="time">9:15 am • 9:15 pm </td><td class="event"> Hacking (w/ breaks for food) </td>
 				</tr>
 				<tr>
-					<td class="time">&nbsp&nbsp9:15 pm • 10:00 pm </td><td class="event"> 1st round judging + delibration </td>
+					<td class="time">&nbsp;&nbsp;9:15 pm • 10:00 pm </td><td class="event"> 1st round judging + delibration </td>
 				</tr>
 				<tr>
 					<td class="time">10:00 pm • 11:00 pm </td><td class="event"> Demos/2nd round judging + closing ceremonies </td>
@@ -122,14 +121,15 @@
 			You can also find us on Twitter <a href="https://twitter.com/lexhacks">@lexhacks</a>. <br><br>
 		</div>
 	</section>
-</div>
-<footer class='text-center'>
-	<p>&copy; LexHack 2014. Made with &lt;3 in Lexington.</p>
-</footer>
+	
+	<footer class='text-center'>
+		<p>&copy; LexHack 2014. Made with &lt;3 in Lexington.</p>
+	</footer>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="javascripts/jquery.min.js"><\/script>')</script>
-<script>$(document).ready(function(){
+<script>//http://www.paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
+$(document).ready(function(){
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 
