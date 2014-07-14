@@ -1,4 +1,4 @@
 lexhack.github.io
 =================
 
-LexHack website
+LexHack 2014 website
