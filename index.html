@@ -23,6 +23,9 @@
 	ga('create', 'UA-52347041-1', 'auto');
 	ga('send', 'pageview');
 	</script>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="javascripts/jquery.min.js"><\/script>')</script>
 </head>
 
 <body>
@@ -83,29 +86,81 @@
 		</div>
 	</section>
 
+	<style>
+		#faq .container.content div h3{
+			background-color:#F2B500;
+			padding:5px;
+			margin:0px;
+		}
+		#faq .container.content div p{
+			display:block;
+			padding:0;margin:0;
+			padding-top:10px;
+		}
+		
+		.trans div p{
+			height:0;
+			-ms-transition:all 0.3s;
+			-o-transition:all 0.3s;
+			-moz-transition:all 0.3s;
+			-webkit-transition:all 0.3s;
+			transition:all 0.3s;
+			overflow-y:hidden;
+		}
+		.trans div:hover p{
+			height:200px;
+		}
+	</style>
+	<script>
+		//Whenever it registers a touch event, it removes the transition thing, since hover don't work.
+		//I don't think you *can* disable JS on mobile anyway.
+		window.addEventListener('touchstart', function detecttouch () {
+			$("#faq .container.content").removeClass("trans");
+			window.removeEventListener('touchstart', detecttouch);
+		}, false);
+	</script>
 	<section id="faq">
 		<header>
 			<h1>FAQ</h1>
 		</header>
-		<div class='container content'>
-			<h3>Who can attend?</h3>
-			<p>Anyone currently enrolled in high school may attend. If you're unsure about your eligibility, please <a href="mailto:info@lexhack.org">email</a> us.</p>
-			<h3>Do I need to know anything about programming to attend?</h3>
-			<p>Nope! Part of the goal of LexHack is to help people learn how to quickly develop a prototype of a full application from a single idea.  We'll have plenty of mentors at the event to help you learn, and we guarantee you'll have built something awesome by the end of the day! However, we do recommend checking out sites like <a href='http://codecademy.com'>Codecademy</a> or <a href='https://code.org'>Code.org</a> to familiarize yourself with basic programming concepts. We'll also have a special award category for the best beginner project.</p>
-			<h3>How much does LexHack cost?</h3>
-			<p>Absolutely nothing! This is thanks to the gracious donations of our <a href="#sponsors">sponsors</a>.</p>
-			<h3>Do I need to make a team for LexHack?</h3>
-			<p>Not at all! We recommend competing with a team of 4 students (or less), and if already have a team in mind, that's great! However, we've set aside time in the morning for you to meet others and form a team if you don't have one when you sign up. Just be prepared to come a little earlier (doors open at 8 am).</p>
-			<h3>What technologies/programming languages do I need to use?</h3>
-			<p>You can create your application using any technology you would like, as long as it meets one of two criteria for submission:
-				<br>- You can provide source code that anyone can run (e.g. code in a language with a readily-available compiler)
-				<br>- You can provide a working executable for Mac, Windows, Linux, iOS, or Android, as well as source we can view (e.g. a project written with a proprietary compiler, such as an iPhone app).
-				<br>If you are still unsure if the programming language you wish to use is legal, please contact us. 
-			</p>
-			<h3>How can I volunteer to mentor?</h3>
-			<p>If you've graduated from high school, you can volunteer to mentor by filling out our form <a href="mentor-registration.html">here</a>. If you're a high school student, we recommend participating in the event itself. However, if you'd prefer to mentor please contact us directly. Mentoring is a full-day commitment that involves teaching students our pre-written development curriculum and helping them with their own projects. Thanks for your interest in volunteering!</p>
-			<h3>What do I need to bring?</h3>
-			<p>Bring yourself and any tools you need. For most, this will just be a laptop and charger. If you're more advanced and want to do a hardware project or a mobile application, bring the required equipment for these as we won't have any additional equipment available. </p>
+		<div class='container content trans'>
+			<div>
+				<h3>Who can attend?</h3>
+				<p>Anyone currently enrolled in high school may attend. If you're unsure about your eligibility, please <a href="mailto:info@lexhack.org">email us</a>.</p>
+			</div>
+			<div>
+				<h3>What is the registration deadline?</h3>
+				<p>We don't have any particular deadline, but registration is capped at 100 people due to logistical constraints, so we recommend earlier rather than later.</p>
+			</div>
+			<div>
+				<h3>Do I need to know anything about programming to attend?</h3>
+				<p>Nope! Part of the goal of LexHack is to help people learn how to quickly develop a prototype of a full application from a single idea.  With plenty of mentors at the event to help you learn, we guarantee you'll have built something awesome by the end of the day! We even have a special award category for the best beginner project. <br> However, we do recommend checking out sites like <a href='http://codecademy.com'>Codecademy</a> or <a href='https://code.org'>Code.org</a> to familiarize yourself with basic programming concepts.</p>
+			</div>
+			<div>
+				<h3>How much does LexHack cost?</h3>
+				<p>Absolutely nothing, thanks to the gracious donations of our <a href="#sponsors">sponsors</a>!</p>
+			</div>
+			<div>
+				<h3>Do I need to make a team for LexHack?</h3>
+				<p>Not at all! We recommend competing with a team of 4 students (or less), and if already have a team in mind, that's great! However, we've set aside time in the morning for you to meet others and form a team if you don't have one when you sign up. Just be prepared to come a little earlier (doors open at 8 am).</p>
+			</div>
+			<div>
+				<h3>What technologies/programming languages do I need to use?</h3>
+				<p>
+					You can create your application using any technology you would like, as long as:
+					<br>&bull;You can provide source code that anyone can run easily and for free (Python, Java, C++, HTML/CSS/JS, ...); or
+					<br>&bull;You can provide a working executable for Mac, Windows, Linux, iOS, or Android, as well as source we can view (An Apple App Store app uses a proprietary compiler, etc).
+					<br>If you are still unsure if the programming language you wish to use is legal, please contact us. 
+				</p>
+			</div>
+			<div>
+				<h3>How can I volunteer to mentor?</h3>
+				<p>If you've graduated from high school, you can volunteer to mentor by filling out our form <a href="mentor-registration.html">here</a>. If you're a high school student, we recommend participating in the event itself. However, if you'd prefer to mentor please <a href="mailto:info@lexhack.org">contact us directly</a>. Mentoring is a full-day commitment that involves teaching students our pre-written development curriculum and helping them with their own projects. Thanks for your interest in volunteering!</p>
+			</div>
+			<div>
+				<h3>What do I need to bring?</h3>
+				<p>Bring yourself and any tools you need. For most, this will just be a laptop and charger. If you want to do a hardware project or a mobile application, bring whatever you need for it as we don't have any equipment to lend out. </p>
+			</div>
 		</div>
 	</section>
 	<section id="sponsors">
@@ -167,17 +222,14 @@
 			You can also find us on Twitter <a href="https://twitter.com/lexhacks">@lexhacks</a>. <br><br>
 		</div>
 	</section>
-	
 	<footer class='text-center'>
 		<p>&copy; LexHack 2014. Made with &lt;3 in Lexington.</p>
 	</footer>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="javascripts/jquery.min.js"><\/script>')</script>
-<script>//http://www.paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
-$(document).ready(function(){
-	$('a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
+	<script>//http://www.paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
+	$(document).ready(function(){
+		$('a[href^="#"]').on('click',function (e) {
+			e.preventDefault();
 
 			var target = this.hash,
 			$target = $(target);
