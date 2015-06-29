@@ -3255,7 +3255,8 @@ input[type="button"].btn-block {
         font-size: 16px; }
         .nav-container .nav-pills li a.nav-pill.yellow {
           background-color: #F2B500;
-          border-color: #F2B500; }
+          border-color: #F2B500;
+          color: black; }
         @media (min-width: 768px) {
           .nav-container .nav-pills li a.nav-pill {
             width: 98%; } }
@@ -3416,13 +3417,15 @@ section {
   #archive .content img {
     width: 60%; }
   #archive .content p {
+    font-size: 1.2em;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em; }
   #archive .content p.indent {
+    font-size: 1em;
+    width: 100%;
     text-align: left;
-    text-indent: 3em;
-    font-size: 0.8em; }
+    text-indent: 3em; }
 
 /*# sourceMappingURL=style.css.map */
